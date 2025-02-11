@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Marko+One&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+:root {
+  --primary-color-light: #20242f;
+  --secondary-color: #f49e09;
+  --extra-light: rgba(255, 255, 255, 0.5);
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Margarine", Montserrat;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+  text-align: center;
+}
+
+.section__subheader {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  left: 5%;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Magarine", sans-serif;
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+header {
+  background-image:
+    url("images/homepage.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid var(--extra-light);
+}
+
+.nav__bar {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav__logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00FF11;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+
+.link a {
+  padding: 1.5rem 5px;
+  font-weight: 500;
+  color: var(--white);
+  transition: 0.3s;
+  font-family: var(--header-font);
+}
+
+.link a:hover {
+  color: var(--secondary-color);
+}
+
+.link span {
+  padding: 1rem 0;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #023718;
+  border-radius: 100px;
+  outline: 1px solid transparent;
+  overflow: hidden;
+
+  padding: 8px;
+  margin-inline: auto;
+  width: 70px;
+  height: 70px;
+  max-width: 100%;
+  transition: width 1.5s, outline 1s;
+}
+
+.search-bar:focus-within {
+  width: 500px;
+  outline: 1px solid #20242f;
+}
+
+.search-input {
+  font-size: 18px;
+  color: #023718;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-inline: 1rem;
+  flex: auto;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.search-bar:focus-within .search-input {
+  opacity: 1;
+}
+
+.search-submit {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #023718;
+  background-color: #023718;
+  border-radius: 50%;
+  border: none;
+  width: calc(70px, 8px, 8px);
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.search-submit i{
+  color: #ffffff;
+}
+
+.header__container {
+    padding: 12rem 1rem;
+  }
+  
+  .header__container h1 {
+    margin-bottom: 1rem;
+    max-width: 700px;
+    font-size: 10rem;
+    font-family: var(--header-font);
+    color: var(--white);
+  }
+  
+  .header__container h4 {
+    position: relative;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--header-font);
+    color: var(--white);
+  }
+  
+  
+  .header__container h4::after {
+    position: absolute;
+    content: "";
+    left: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 2rem; 
+    background-color: var(--white);
+  }
+
+  .sub-header{
+    height: 59vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/about\ us\ page.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.pictures{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.pictures-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.pictures h1{
+  font-family: "Margarine";
+  font-size: 3rem;
+  font-weight: 600;
+}
+.pictures-col img{
+    width: 100%;
+    display: grid;
+}
+/* this code controls the text on the image; color, spacing  */
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: var(--primary-color-light);
+    opacity: 0.8;
+}
+/* this code controls the overlay design of the text  */
+.layer h5{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h5{
+    bottom: 9%;
+    opacity: 1;
+}
+
+.journals__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .journals__content {
+    padding: 2rem;
+    background-color: var(--primary-color-light);
+  }
+  
+  .journals__author {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .journals__author img {
+    max-width: 30px;
+    border-radius: 100%;
+  }
+  
+  .journals__author p {
+    font-size: 0.9rem;
+    opacity: 0.75;
+    color: var(--white);
+  }
+  
+  .journals__content h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .journals__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .journals__footer p {
+    font-size: 0.9rem;
+    opacity: 0.5;
+  }
+  
+  .journals__footer span a {
+    font-size: 1.5rem;
+    color: var(--white);
+    opacity: 0.75;
+  }
+  
+  .journals__btn {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .section__header {
+      font-size: 2rem;
+    }
+
+    .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+    }
+
+    .nav__bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav__links {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .search-bar {
+      width: 100%;
+      height: 50px;
+    }
+
+    .search-input {
+      font-size: 16px;
+    }
+
+    .header__container h1 {
+      font-size: 5rem;
+    }
+
+    .header__container h4 {
+      font-size: 0.875rem;
+    }
+
+    .journals__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .journals__content {
+      padding: 1rem;
+    }
+
+    .journals__author p,
+    .journals__footer p {
+      font-size: 0.75rem;
+    }
+
+    .journals__footer span a {
+      font-size: 1.25rem;
+    }
+
+    .layer h5{
+      font-size: 10px;
+    }
+    .layer:hover h5{
+      bottom: 9%;
+      opacity: 1;
+      font-size: 5px;
+    }
+  }
